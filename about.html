@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220704205526"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220704205526"></script>
+    <script src="https://kit.fontawesome.com/d113f74149.js?_v=20220704205526" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220704205526">
 </head>
     <body>
         <div class="wrapper">
@@ -13,7 +16,7 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__logo logo">
-                <img src="/img/logo.png" alt="Логотип">
+                <a href="/"><picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Логотип"></picture></a>
             </div>
             <div class='header__button-container'>
                 <div class='header__button'></div>
@@ -58,17 +61,13 @@
             </p>
             <ul class="footer__social social">
                 <li class="social__item">
-                    <a href="https://vk.com/skullage" class="social__link">
-                        <svg class="social__svg social__svg_invert">
-                            <use xlink:href="./img/icons/icons.svg#vk"></use>
-                        </svg>
+                    <a href="https://vk.com/skullage" target="_blank" class="social__link">
+                        <i class="fa-brands fa-vk"></i>
                     </a>
                 </li>
                 <li class="social__item">
-                    <a href="https://github.com/Skullage" class="social__link">
-                        <svg class="social__svg social__svg_invert">
-                            <use xlink:href="./img/icons/icons.svg#github"></use>
-                        </svg>
+                    <a href="https://github.com/Skullage" target="_blank" class="social__link">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
             </ul>
@@ -76,6 +75,6 @@
     </div>
 </footer>
         </div>
-        <script src="js/app.min.js"></script>
+        <script src="js/app.min.js?_v=20220704205526"></script>
     </body>
 </html>
