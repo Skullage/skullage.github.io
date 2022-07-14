@@ -133,13 +133,8 @@ h6 {
   gap: 2rem;
 }
 
-.social__item {
-  font-size: 1.5625rem;
-  line-height: 1.2;
-}
-
 .social__item i {
-  color: #fff;
+  border-radius: 50%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -152,18 +147,27 @@ h6 {
   transition: 0.3s;
 }
 
-.social__item_invert i {
-  color: #474745;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.social__item .fa-vk {
+  color: #0077ff;
+  font-size: 1.875rem;
+  line-height: 0.8333333333;
+  background-color: #fff;
 }
 
-.social__item_invert i:hover {
-  color: rgba(71, 71, 69, 0.5);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.social__item .fa-vk:hover {
+  color: #000;
+}
+
+.social__item .fa-github {
+  color: #fff;
+  font-size: 1.875rem;
+  line-height: 0.9333333333;
+  background-color: #000;
+}
+
+.social__item .fa-github:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .menu {
