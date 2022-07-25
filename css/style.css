@@ -117,43 +117,42 @@ h6 {
   gap: 2rem;
 }
 
-.social__item i {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.social__item i:hover {
-  color: #474745;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+.social__link-vk {
+  background: url(../img/icons/icons.svg#vk) no-repeat center;
 }
 
-.social__item .fa-vk {
-  color: #0077ff;
-  font-size: 1.875rem;
-  line-height: 0.8333333333;
-  background-color: #fff;
+.social__link-vk:hover {
+  background-image: url(../img/icons/icons.svg#vk-invert);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.social__item .fa-vk:hover {
-  color: #000;
+.social__link-github {
+  background: url(../img/icons/icons.svg#github) no-repeat center;
+  background-size: cover;
 }
 
-.social__item .fa-github {
-  color: #fff;
-  font-size: 1.875rem;
-  line-height: 0.9333333333;
-  background-color: #000;
-  border-radius: 100%;
-  padding: 1px;
-  padding-top: 2px;
+.social__link-github:hover {
+  background-image: url(../img/icons/icons.svg#github-invert);
+  background-size: contain;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
-.social__item .fa-github:hover {
-  color: #000;
-  background-color: #fff;
+.social__item {
+  width: 40px;
+  height: 40px;
 }
 
 .menu__list {
@@ -340,12 +339,9 @@ body {
 .swiper {
   width: 100%;
   height: auto;
-  padding: 0 0 5rem;
-}
-
-.swiper-3d {
-  -webkit-perspective: none;
-          perspective: none;
+  padding: 1rem 1rem 5rem;
+  border: 1px solid black;
+  border-radius: 50px;
 }
 
 .no-slide {
